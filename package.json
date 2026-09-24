@@ -1,0 +1,51 @@
+{
+  "name": "ember-oak-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:db": "supabase test db",
+    "ingest": "tsx --conditions=react-server --env-file=.env.local scripts/ingest.ts",
+    "make-admin": "tsx --conditions=react-server --env-file=.env.local scripts/make-admin.ts",
+    "eval": "GEMINI_MAX_RETRY_WAIT_MS=90000 tsx --conditions=react-server --env-file=.env.local evals/run.ts",
+    "db:reset": "supabase db reset",
+    "eval:record": "GEMINI_MAX_RETRY_WAIT_MS=90000 EVAL_MODE=record tsx --conditions=react-server --env-file=.env.local evals/run.ts",
+    "eval:replay": "EVAL_MODE=replay tsx --conditions=react-server --env-file=.env.local evals/run.ts",
+    "ui:check": "node e2e/ui-check.mjs"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.8.0",
+    "@google/genai": "^2.24.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.1",
+    "class-variance-authority": "^0.7.1",
+    "cn": "^0.4.0",
+    "lucide-react": "^1.48.0",
+    "next": "16.3.6",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1",
+    "shadcn": "^4.21.0",
+    "tw-animate-css": "^1.4.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^22.20.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.6",
+    "playwright-core": "^1.63.0",
+    "supabase": "^2.117.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.1"
+  }
+}

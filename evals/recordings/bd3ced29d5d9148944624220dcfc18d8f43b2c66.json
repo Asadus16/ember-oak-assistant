@@ -1,0 +1,1 @@
+[{"functionCalls":[{"name":"get_products","args":{"query":"Sumatra Mandheling"}}],"parts":[{"functionCall":{"name":"get_products","args":{"query":"Sumatra Mandheling"},"id":"call_1030400"},"thoughtSignature":"El4KXAFpFH0Tp69q/6JKLJAwF9cCWKA+4fmAhXO+So0lEu5B11roVHZFTsGxAmZBvzYOMw/P+QGEtbyYpXP7AcuQA+E8hM+m/Cum9zrGYdSBMX4gytRT6pO2pzMCCFiC"}]},{"parts":[{"text":""}]}]

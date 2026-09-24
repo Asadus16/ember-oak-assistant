@@ -1,0 +1,1 @@
+[{"functionCalls":[{"name":"get_products","args":{"query":"Electric Burr Grinder"}}],"parts":[{"functionCall":{"name":"get_products","args":{"query":"Electric Burr Grinder"},"id":"call_954655"},"thoughtSignature":"El4KXAFpFH0TP73Xue6z8mWgrzFQmFJJ0pSyVO0TKXNJS1KeEYR6ji5hTRRVNnHWpYpx2CCz/nnQhjITLhndnfqLefiBXMieG/sAOeKs8b9t6xPFvuRRDdz9hHUSRC1a"}]},{"parts":[{"text":""}]}]
